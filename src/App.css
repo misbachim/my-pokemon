@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cursor-pointer {
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex {
+  display: flex;
+}
+.flex.wrap {
+  flex-wrap: wrap;
+}
+.flex.column {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+.flex.center {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.uppercase {
+  text-transform: uppercase;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.margin-left {
+  margin-left: auto;
+}
+.margin-right {
+  margin-right: auto;
+}
+.margin-top-small {
+  margin-top: 1em;
+}
+.margin-left-small {
+  margin-left: 1em;
+}
+
+img.pokemon {
+  height: 10em;
+  width: 10em;
+}
+
+div.stat {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+div.stat > 
+  div.label {
+    margin-right: auto;
   }
-  to {
-    transform: rotate(360deg);
+div.stat > 
+  div.number {
+    margin-left: auto;
+    padding-left: 1em;
   }
+div.moves {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+div.moves >
+  div.move {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
